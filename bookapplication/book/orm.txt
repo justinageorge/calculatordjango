@@ -1,0 +1,2 @@
+Books.objects.create(name="alchemist",author="paulo coehlo",price=500,publisher="Macmillan Publishers")
+Books.objects.create(name="the touch of eternity",author="durjoyy dutta",price=125,publisher="penguin random house")
