@@ -1,11 +1,11 @@
+from django.db import models
 
+# Create your models here.
 class Mobiles(models.Model):
     name=models.CharField(max_length=200,unique=True)
     price=models.PositiveIntegerField()
     brand=models.CharField(max_length=200)
     specs=models.CharField(max_length=200)
     display=models.CharField(max_length=200)
-
-ORM queries    
-eg:
-Mobiles.objects.create(name="samsungm3",price=15000,specs="24h battery charge", display="amolquad", brand="samsung")
+    def __str__(self):
+        return self.name    
